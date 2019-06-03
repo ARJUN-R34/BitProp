@@ -1,0 +1,21 @@
+=============== Jun 2, 2019 (IST) ===============
+23:16:50.758633 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:16:50.800436 db@open opening
+23:16:50.800723 version@stat F·[] S·0B[] Sc·[]
+23:16:50.845887 db@janitor F·2 G·0
+23:16:50.845911 db@open done T·45.451469ms
+23:17:06.378383 db@close closing
+23:17:06.378497 db@close done T·109.494µs
+=============== Jun 2, 2019 (IST) ===============
+23:17:11.472184 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:17:11.472294 version@stat F·[] S·0B[] Sc·[]
+23:17:11.472304 db@open opening
+23:17:11.472345 journal@recovery F·1
+23:17:11.472458 journal@recovery recovering @1
+23:17:11.490012 memdb@flush created L0@2 N·4 S·258B "n:\x81..ing,v4":"version,v1"
+23:17:11.490221 version@stat F·[1] S·258B[258B] Sc·[0.25]
+23:17:11.559014 db@janitor F·3 G·0
+23:17:11.559103 db@open done T·86.783493ms
+=============== Jun 3, 2019 (IST) ===============
+00:14:45.442255 db@close closing
+00:14:45.472532 db@close done T·30.254933ms

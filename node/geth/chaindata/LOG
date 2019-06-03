@@ -1,0 +1,31 @@
+=============== Jun 2, 2019 (IST) ===============
+23:16:45.449335 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:16:45.529141 db@open opening
+23:16:45.529602 version@stat F·[] S·0B[] Sc·[]
+23:16:45.554083 db@janitor F·2 G·0
+23:16:45.554401 db@open done T·25.094728ms
+=============== Jun 2, 2019 (IST) ===============
+23:16:50.581804 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:16:50.581945 version@stat F·[] S·0B[] Sc·[]
+23:16:50.581956 db@open opening
+23:16:50.582002 journal@recovery F·1
+23:16:50.584419 journal@recovery recovering @1
+23:16:50.631469 memdb@flush created L0@2 N·21 S·1KiB "\a\u007f\x9f..\t\x91$,v7":"\xe9\xfeJ..\x1an\xd5,v12"
+23:16:50.633659 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+23:16:50.699450 db@janitor F·3 G·0
+23:16:50.699502 db@open done T·117.511496ms
+23:17:06.377815 db@close closing
+23:17:06.378009 db@close done T·187.872µs
+=============== Jun 2, 2019 (IST) ===============
+23:17:11.274268 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:17:11.274493 version@stat F·[1] S·1KiB[1KiB] Sc·[0.25]
+23:17:11.274508 db@open opening
+23:17:11.274572 journal@recovery F·1
+23:17:11.276692 journal@recovery recovering @3
+23:17:11.320166 memdb@flush created L0@5 N·2 S·241B "Dat..ion,v23":"Las..der,v24"
+23:17:11.323526 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+23:17:11.389067 db@janitor F·4 G·0
+23:17:11.389150 db@open done T·114.622634ms
+=============== Jun 3, 2019 (IST) ===============
+00:14:45.390123 db@close closing
+00:14:45.441779 db@close done T·51.645009ms

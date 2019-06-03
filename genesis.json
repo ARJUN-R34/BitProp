@@ -1,0 +1,24 @@
+{
+    "difficulty": "0x400",
+    "alloc": {
+        "70e3f4c96111201c2795220ded3754b7bdb7b8f3": {
+            "balance": "0x300000"
+        },
+        "a8e173668dca836bc1f892fc0baaf3c048914b7e": {
+            "balance": "0x300000"
+        },
+        "208748451a32bb3fe76f68ea9744eedfdd062d74": {
+            "balance": "0x300000"
+        },
+        "b728f88c0494eaf5e35798db99a6491565b0d3b4": {
+            "balance": "0x300000"
+        },
+        "d87f6f1be743f226f370d1a1066cb77cc11e213a": {
+            "balance": "0x300000"
+        }
+    },
+    "gasLimit": "0xfffffffffffff",
+    "config": {
+        "chainId": 4002
+    }
+}

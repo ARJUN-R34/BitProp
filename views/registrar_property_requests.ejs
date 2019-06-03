@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BitProp</title>
+    <style>
+        body {
+            background: #fff;
+        }
+
+        body::after {
+            content: "";
+            background:
+                url(https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1953&q=80);
+            opacity: 0.25;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="jumbotron text-center">
+    <div class="">
+        <h1 class="text-info display-3">Bit<span class="text-secondary">Prop</span> </h1>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-light btn btn-outline-info">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="/">BitProp | HomePage </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href='/registrar/searchuserproperties'> View User Properties </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href='/registrar/addnewuser'> Add a new User </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href='/registrar/propertyrequests'> Property Registration Requests
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info" href='/registrar/ownershiprequests'> Property Transfer Requests </a>
+                </li>
+            </ul>
+        </nav>
+        <br />
+
+        <div class="jumbotron border border-info bg-dark">
+
+            <br>
+            <h1 style="color: azure">Property Registration Requests</h1>
+            <br>
+            <form>
+                <input type="text" name="propid" id="propid" placeholder="Property Id" />
+                <input type="text" name="regid" id="regid" placeholder="Registrar ID" />
+                <button type="submit" class="btn btn-success text-white" onclick="approve_property()" >Approve</button>
+            </form>
+
+            <form>
+                <input type="text" name="propid1" id="propid1" placeholder="Property Id" />
+                <input type="text" name="regid1" id="regid1" placeholder="Registrar ID" />
+                <button type="submit" class="btn btn-danger text-white" onclick="reject_property()" >Reject</button>
+            </form>
+            
+            
+            <!-- Form to view Property requests from users -->
+
+        </div>
+       
+    </div>
+</body>
+
+<script>
+    function approve_property() {
+        var propid = document.getElementById("propid").value;
+        var regid = document.getElementById("regid").value;
+        
+        $.post('/registrar/approveproperty', {propid , regid} , 'json');
+    }
+
+    function reject_property() {
+        var propid1 = document.getElementById("propid1").value;
+        var regid1 = document.getElementById("regid1").value;
+
+        $.post('/registrar/rejectproperty', {propid1 , regid1} , 'json');
+    }
+</script>
+
+</html>

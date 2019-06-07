@@ -39,22 +39,10 @@ Install the required dependencies using
 ```
 npm install
 ```
-To start our private chain using the 5 accounts in the "node" folder, run,
+Start private chain and run
 ```
-geth --identity "miner" --networkid 4002 --datadir node --rpc --rpcport "8545" --unlock 0,1,2,3,4 --ipcpath "~/.ethereum/geth.ipc" --rpccorsdomain "*" --rpcapi "db,eth,net,web3,personal"
+npm start
 ```
-Open another console and run geth console using
-```
-geth attach
-```
-To start the miner, run the below command in the same terminal,
-```
-miner.start()
-```
-
-Open another console in the root directory and run the below command to start the node server,
-```
-nodemon start
-```
+to start the project.
 
 Open your browser and go to localhost:3000 to interact with the app.
